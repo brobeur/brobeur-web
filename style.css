@@ -7,7 +7,7 @@ a {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: monospace;
     margin: 0;
     background: #d5c887 url('../images/bg.png') repeat-x center top;
     color: #5c0f0f;
@@ -24,7 +24,7 @@ img {
     background: #000;
     position:fixed;
     width: 100%;
-    z-index: 500;
+    z-index: 800;
 }
 
 #header {
