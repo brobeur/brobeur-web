@@ -59,7 +59,7 @@ filwan
 import dominate
 from dominate.tags import *
 
-doc = dominate.document(title='BroBeur Studios')
+doc = dominate.document(title='BroBeur Jam 2014')
 
 with doc.head:
     link(rel='stylesheet', href='style.css')
@@ -78,7 +78,7 @@ print doc
 
 # <codecell>
 
-ls
+import bs2
 
 # <codecell>
 
