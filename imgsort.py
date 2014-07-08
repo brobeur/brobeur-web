@@ -26,6 +26,7 @@ lizim =
 # <codecell>
 
 import os
+import dominate 
 
 # <codecell>
 
@@ -52,6 +53,40 @@ for im in lisim:
 # <codecell>
 
 filwan
+
+# <codecell>
+
+import dominate
+from dominate.tags import *
+
+doc = dominate.document(title='BroBeur Studios')
+
+with doc.head:
+    link(rel='stylesheet', href='style.css')
+    script(type='text/javascript', src='script.js')
+
+with doc:
+    with div(id='header').add(ol()):
+        for i in filwan:
+            (img(a(i.title)(), src='imgs/%s' % i))
+
+    with div():
+        attr(cls='body')
+        p('Lorem ipsum..')
+
+print doc
+
+# <codecell>
+
+ls
+
+# <codecell>
+
+opind = open('/home/pi/brobeur-web/index.html', 'r')
+
+# <codecell>
+
+opind.read()
 
 # <codecell>
 
